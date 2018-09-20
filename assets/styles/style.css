@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 110%;
+}
+
+
+header {
+  background-color: black;
+}
+
+#sportaLogo {
+  width: 120px;
+} 
+
+#form-search {
+  font-family: 'Lato', sans-serif;
+}
+
+.nav-item {
+  font-family: 'Poppins', sans-serif;
+  color: #d9d9d9;
+}
+
+/* This will remove blue border after clicked */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+
+
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url('../img/showcase1.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('../img/showcase1.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../img/showcase1.jpg');
+  background-size: cover;
+}
+
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
