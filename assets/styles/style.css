@@ -6,25 +6,50 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 110%;
+  font-size: 105%;
+  background-color: #ecf0f1; /* #ecf0f1; Not So White */
+  color: #2c3e50;
+}
+
+section {
+
+}
+
+.pop-font {
+  font-family: 'Roboto', sans-serif;
+
 }
 
 
 header {
-  background-color: black;
+ background-color: white;
 }
 
-#sportaLogo {
+.main-showcase {
+  width:  95%;
+}
+
+#brand-logo {
   width: 120px;
 } 
 
-#form-search {
-  font-family: 'Lato', sans-serif;
+#loginIcon {
+  width: 28px;
+}
+
+#cartIcon {
+  width: 28px;
+}
+
+
+.btn-bg-black{
+  background-color: black;
+  border-radius: none;
+  color: white;
 }
 
 .nav-item {
-  font-family: 'Poppins', sans-serif;
-  color: #d9d9d9;
+  color: #2c3e50;
 }
 
 /* This will remove blue border after clicked */
@@ -50,24 +75,64 @@ header {
 }
 
 .carousel-image-1 {
-  background: url('../img/showcase1.jpg') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                              rgba(0, 0, 0, 0.3) url('../img/showcase1.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .carousel-image-2 {
-  background: url('../img/showcase1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                              rgba(0, 0, 0, 0.3) url('../img/showcase2.jpg');
   background-size: cover;
+  background-attachment: fixed;
+
 }
 
 .carousel-image-3 {
-  background: url('../img/showcase1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                              rgba(0, 0, 0, 0.3) url('../img/showcase3.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 
-
-
+/* FOOTER CSS
+-------------------------------------------------- */
+footer {
+  font-family: 'lato', sans-serif;
+}
 
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* .navbar .navbar-nav {
+  text-align: left;
+} */
+
+ion-icon,
+.nav-item a {
+  color: black;
+}
+
+
+ion-icon {
+  font-size: 25px;
+}
+
+
+
+
+
+
