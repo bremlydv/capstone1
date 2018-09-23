@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 body {
@@ -11,22 +11,52 @@ body {
   color: #2c3e50;
 }
 
+h1,h2,h6 {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border-radius: none;
+}
+
+.btn:hover {
+      color: #636e72;
+
+}
+
+.overflow-hidden { overflow: hidden; }
+
+
+ion-icon {
+  font-size: 25px;
+}
+
+
 section {
 
 }
 
-.pop-font {
-  font-family: 'Roboto', sans-serif;
 
-}
 
+
+
+
+
+/*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*/
+/*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*/
 
 header {
  background-color: white;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow:    0 8px 6px -6px #999;
+    box-shadow:         0 8px 6px -6px #999;
 }
 
 .main-showcase {
-  width:  95%;
+  width:  97%;
 }
 
 #brand-logo {
@@ -41,16 +71,16 @@ header {
   width: 28px;
 }
 
+.navbar {
+  font-family: 'Poppins', sans-serif;
 
-.btn-bg-black{
-  background-color: black;
-  border-radius: none;
-  color: white;
 }
 
-.nav-item {
-  color: #2c3e50;
+.navbar ion-icon,
+.nav-item a {
+  color: black;
 }
+
 
 /* This will remove blue border after clicked */
 .navbar-toggler:focus,
@@ -59,6 +89,18 @@ header {
    box-shadow: none;
 }
 
+
+.nav-item a:hover{
+/*   background-color:#FCC; */
+    color: #2c3e50; /* Midnight blue*/
+
+}
+
+
+
+/*-------------------------------------------------- */
+/* MAIN SHOWCASE SECTION --------------------------- */
+/*-------------------------------------------------- */
 
 
 
@@ -72,67 +114,118 @@ header {
 
 .carousel-item {
   height: 450px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.carousel-image-1 {
+carousel-item img {
+  max-width: 75%;
+}
+
+#myCarousel .btn {
+    background-color: #ecf0f1;
+    color: black ;
+
+}
+
+#myCarousel .btn:hover {
+
+  color: #636e72;
+
+}
+
+
+
+ .carousel-image-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                              rgba(0, 0, 0, 0.3) url('../img/showcase1.jpg');
+                              rgba(0, 0, 0, 0.3)  url('../img/showcase1lg.jpg');
   background-size: cover;
-  background-attachment: fixed;
+  height: 450px;
 }
 
 .carousel-image-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                              rgba(0, 0, 0, 0.3) url('../img/showcase2.jpg');
+                              rgba(0, 0, 0, 0.3)  url('../img/showcase2lg.jpg');
   background-size: cover;
-  background-attachment: fixed;
-
+  height: 450px;
 }
 
 .carousel-image-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                              rgba(0, 0, 0, 0.3) url('../img/showcase3.jpg');
+                              rgba(0, 0, 0, 0.3)  url('../img/showcase3lg.jpg');
   background-size: cover;
-  background-attachment: fixed;
+  height: 450px;
 }
 
+ .carousel-image-1sm {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                              rgba(0, 0, 0, 0.3)  url('../img/showcase1sm.jpg');
+  background-size: cover;
+  height: 450px;
+}
+
+ .carousel-image-2sm {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                              rgba(0, 0, 0, 0.3)  url('../img/showcase2sm.jpg');
+  background-size: cover;
+  height: 450px;
+}
+
+ .carousel-image-3sm {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                              rgba(0, 0, 0, 0.3)  url('../img/showcase3sm.jpg');
+  background-size: cover;
+  height: 450px;
+}
+
+
+ 
 
 /* FOOTER CSS
 -------------------------------------------------- */
 footer {
-  font-family: 'lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 70%;
 }
 
+footer h6 {
+  font-size: 115%; 
+    font-family: 'Poppins', sans-serif;
+
+}
+
+footer li {
+  letter-spacing: .5px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.navbar {
-  font-family: 'Poppins', sans-serif;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+  .carousel-item h1 {
+    font-size: 250%;
+  }
 
 }
 
-/* .navbar .navbar-nav {
-  text-align: left;
-} */
-
-ion-icon,
-.nav-item a {
-  color: black;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
 
-ion-icon {
-  font-size: 25px;
 }
 
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
 
 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
 
 
 
