@@ -7,27 +7,34 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 105%;
-  background-color: #ecf0f1; /* #ecf0f1; Not So White */
+  background-color: #f2f2f2; /* #ecf0f1; Not So White */
   color: #2c3e50;
 }
 
-h1,h2,h6 {
+h1,h4,h6 {
     font-family: 'Poppins', sans-serif;
-
 }
+
+.subHeading {
+  font-family: 'Lato', sans-serif;
+  color:black;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
 
 .btn {
+    
     background-color: black;
     color: white;
-    border-radius: none;
+
 }
+
 
 .btn:hover {
       color: #636e72;
-
 }
 
-.overflow-hidden { overflow: hidden; }
 
 
 ion-icon {
@@ -35,9 +42,6 @@ ion-icon {
 }
 
 
-section {
-
-}
 
 
 
@@ -55,8 +59,8 @@ header {
     box-shadow:         0 8px 6px -6px #999;
 }
 
-.main-showcase {
-  width:  97%;
+#main-showcase {
+  width:  100%;
 }
 
 #brand-logo {
@@ -90,6 +94,7 @@ header {
 }
 
 
+
 .nav-item a:hover{
 /*   background-color:#FCC; */
     color: #2c3e50; /* Midnight blue*/
@@ -117,9 +122,6 @@ header {
   font-family: 'Poppins', sans-serif;
 }
 
-carousel-item img {
-  max-width: 75%;
-}
 
 #myCarousel .btn {
     background-color: #ecf0f1;
@@ -128,9 +130,7 @@ carousel-item img {
 }
 
 #myCarousel .btn:hover {
-
   color: #636e72;
-
 }
 
 
@@ -178,7 +178,107 @@ carousel-item img {
 }
 
 
+/* NEW ARRIVAL SECTION
+-------------------------------------------------- */
  
+ #newArrivalSection {
+    width: 97%;
+ }
+
+ #newArrivalSection .btn {
+    font-size: 85%;letter-spacing: 2px
+ }
+
+/* MEN SECTION
+-------------------------------------------------- */
+ 
+ #menSection {
+    width: 97%;
+ }
+
+ #menSection .card {
+    position: relative; 
+ }
+
+ #menSection .btn {
+    font-size: 85%;letter-spacing: 2px;
+    position: absolute;
+    left:26%;
+    top: 82%;
+    
+ }
+
+
+/* WOMEN SECTION
+-------------------------------------------------- */
+ 
+ #womenSection {
+    width: 97%;
+ }
+
+ #womenSection .card {
+    position: relative; 
+ }
+
+ #womenSection .btn {
+    background-color: #f2f2f2;
+    color: black;
+    font-size: 90%;letter-spacing: 2px;
+    position: absolute;
+    left:25%;
+    top: 82%;
+  }
+
+  #womenSection .btn:hover {
+    color: #636e72;
+  }
+
+ 
+.womenSectionBG {
+  background: url(../img/womenBG.jpg);
+  background-size: cover;
+}
+
+/* SPORT WEAR SECTION
+-------------------------------------------------- */
+ 
+ #sportwearSection {
+    width: 97%;
+ }
+
+ #sportwearSection .btn {
+    font-size: 85%;letter-spacing: 2px
+ }
+
+
+/* INFO SECTION
+-------------------------------------------------- */
+ 
+ 
+ #infoSection h4{
+  letter-spacing: 2px;
+  font-style: bold;
+  font-family: 'Lato', sans-serif;
+ }
+
+ #infoSection img {
+    width: 60px;
+ }
+
+ #infoSection h4 {
+  font-size: 90%;
+ }
+
+ #infoSection p {
+  font-size: 80%;
+  font-family: 'Open Sans', sans-serif;
+ }
+
+ .no-bg {
+   background-color:#f2f2f2;
+ } 
+
+
 
 /* FOOTER CSS
 -------------------------------------------------- */
@@ -206,6 +306,13 @@ footer li {
     font-size: 250%;
   }
 
+  .info-icon {
+    padding-top: 3%;
+    padding-left:3%;
+    padding-right:3%;
+  }
+
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -215,6 +322,23 @@ footer li {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+  #menSection .btn {
+    font-size: 50%;letter-spacing: 2px;
+    position: absolute;
+    left:20%;
+    top: 78%;   
+  }
+
+
+  header {
+    margin-bottom: 30px;
+  }
+
+/*   .bestseller_section{
+  margin-right: 0;
+  margin-left: 0;
+}
+ */
 }
 
 /* Large devices (desktops, 992px and up) */
