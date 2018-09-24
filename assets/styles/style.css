@@ -62,7 +62,7 @@ header {
 #main-showcase {
   width:  100%;
 }
-
+         
 #brand-logo {
   width: 120px;
 } 
@@ -235,21 +235,31 @@ header {
 
  
 .womenSectionBG {
-  background: url(../img/womenBG.jpg);
-  background-size: cover;
+   background: url(../img/womenBG.jpg);
+   background-size: cover;
+   background-attachment: fixed; 
 }
 
 /* SPORT WEAR SECTION
 -------------------------------------------------- */
  
- #sportwearSection {
+ #sportswearSection {
     width: 97%;
  }
 
- #sportwearSection .btn {
+ #sportswearSection h2{
+    color: white;
+ }
+
+ #sportswearSection .btn {
     font-size: 85%;letter-spacing: 2px
  }
 
+.sportswearBG {
+ background: url(../img/sportsBG.jpg);
+ background-size: cover;
+ background-attachment: fixed;
+}
 
 /* INFO SECTION
 -------------------------------------------------- */
@@ -280,6 +290,31 @@ header {
 
 
 
+
+
+/* About Us Section
+-------------------------------------------------- */
+
+.aboutUs {
+  width: 97%;
+}
+
+/* Contact Us Section
+-------------------------------------------------- */
+
+#contactSection {
+  font-family: 'Lato', sans-serif;
+}
+
+#contactSection h1 {
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+#contactSection button {
+  font-family: 'Lato', sans-serif;
+}
+
 /* FOOTER CSS
 -------------------------------------------------- */
 footer {
@@ -295,6 +330,10 @@ footer h6 {
 
 footer li {
   letter-spacing: .5px;
+}
+
+footer .contactLink {
+  color: black;
 }
 
 /* RESPONSIVE CSS
@@ -328,28 +367,38 @@ footer li {
     left:20%;
     top: 78%;   
   }
-
-
   header {
     margin-bottom: 30px;
   }
 
-/*   .bestseller_section{
-  margin-right: 0;
-  margin-left: 0;
+  #womenSection .btn {
+    font-size: 50%;letter-spacing: 2px;
+    position: absolute;
+    left:20%;
+    top: 78%;   
+  }
+
+  
+
+
 }
- */
-}
+
+
+
+
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
-
+  
 
 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+
+}
 
 
 
