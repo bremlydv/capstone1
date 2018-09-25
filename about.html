@@ -20,102 +20,149 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- slick -->
-<!--     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-
-
     <link rel="stylesheet" href="./assets/styles/style.css">
     
     <title>Sporta | About Us</title>
   </head>
   <body>
 
-
-<!--     <section class="p-3 p-md-5 m-md-3 text-center carousel-image-1">
-  <div class="col-md-5 p-lg-5 mx-auto my-5 ">
-    <h1 class="display-4 font-weight-normal">Punny headline</h1>
-    <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-    <a class="btn btn-outline-secondary" href="#">Preview Now</a>
-  </div>
-</section> -->
-
-
-<!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV -->
-<!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV -->
-<!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV -->
 <!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV -->
     <header>
-    <nav class="navbar navbar-expand-sm"> <!--nav-class navbar-dark bg-dark -->
-    <div class="container "> <!-- nav-container -->
-        <a href="index.html" class="navbar-brand">
-          <img id="brand-logo" src="./assets/img/img_logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" >
-          <a href="#"><ion-icon name="search"></a>
-        </button>      
-
-        <button class="navbar-toggler" data-toggle="collapse" >
-          <a href="#">
-            <img  class="" id="cartIcon" src="./assets/img/cart.png">
+      <nav class="navbar navbar-expand-sm"> <!--nav-class navbar-dark bg-dark -->
+        <div class="container "> <!-- nav-container -->
+          <a href="index.html" class="navbar-brand">
+            <img id="brand-logo" src="./assets/img/img_logo.png" alt="">
           </a>
-        </button>
+          <button class="navbar-toggler" data-toggle="collapse" >
+            <a href="#" data-toggle="modal" data-target="#searchModal">
+              <ion-icon name="search">
+            </a>
+          </button>      
 
-        <button class="navbar-toggler toggler-btn" data-toggle="collapse" 
-        data-target="#navbarCollapse">
-          <span><ion-icon name="menu"></ion-icon></span>
-          <!-- <span class="navbar-toggler-icon"></span> -->
-        </button>
+          <button class="navbar-toggler" data-toggle="collapse" >
+            <a href="checkout.html">
+                <img  class="" id="cartIcon" src="./assets/img/cart.png">
+            </a>
+           </button>
 
-        <div class="collapse navbar-collapse text-md-center" id="navbarCollapse">
-          <ul class="navbar-nav"> <!-- mr-auto make the div left aligned -->
-            <li class="nav-item">
-              <a href="#" class="nav-link js--scroll-to-newArrivals">NEW ARRIVALS</a>
-            </li>            
-            <li class="nav-item active">
-              <a href="#menSection" class="nav-link">MEN</a>
-            </li>
-            <li class="nav-item">
-              <a href="#womenSection" class="nav-link">WOMEN</a>
-            </li>
-            <li class="nav-item">
-              <a href="#sportswearSection" class="nav-link">SPORTS</a>
-            </li>
-          </ul>
-        </div>
-        
-        <!-- this div will hide on devices smaller than medium & ml-auto to push -->  
-        <div class="d-none d-sm-block ml-auto"> 
-            <ul class="navbar-nav ">
+          <button class="navbar-toggler toggler-btn" data-toggle="collapse" 
+            data-target="#navbarCollapse">
+            <span><ion-icon name="menu"></ion-icon></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+
+          <div class="collapse navbar-collapse text-md-center" id="navbarCollapse">
+            <ul class="navbar-nav"> <!-- mr-auto make the div left aligned -->
               <li class="nav-item">
-                 <a href="#" class="nav-link"><ion-icon name="search"></a>
+                <a id="js--scroll-to-newArrivals" href="#newArrivalSection" class="nav-link js--scroll-to-newArrivals">NEW ARRIVALS</a>
+              </li>            
+              <li class="nav-item active">
+                <a href="#menSection" class="nav-link">MEN</a>
               </li>
               <li class="nav-item">
-                 <a href="#" class="nav-link"><img id="loginIcon" src="./assets/img/login.png"></a>
+                <a href="#womenSection" class="nav-link">WOMEN</a>
               </li>
               <li class="nav-item">
-                 <a href="#" class="nav-link"><img id="cartIcon" src="./assets/img/cart.png"></a>
+                <a href="#sportswearSection" class="nav-link">SPORTS</a>
               </li>
             </ul>
-        </div>
-        
-      </div> <!-- eof nav-container -->
-    </nav> 
+          </div>
+
+          <!-- this div will hide on devices smaller than medium & ml-auto to push -->  
+          <div class="d-none d-sm-block ml-auto"> 
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+               <a href="#" class="nav-link" data-toggle="modal" data-target="#searchModal">
+                 <ion-icon name="search"></a> 
+               </li>
+               <li class="nav-item">
+                 <a href="#" class="nav-link" data-toggle="modal" data-target="#LoginModal">
+                   <img id="loginIcon" src="./assets/img/login.png"></a>
+               </li>
+               <li class="nav-item">
+                 <a href="checkout.html" class="nav-link">
+                  <img id="cartIcon" src="./assets/img/cart.png"></a>
+               </li>
+             </ul>
+           </div>
+
+         </div> <!-- eof nav-container -->
+       </nav> 
     </header>
 <!-- END OF HEADER HAV --><!-- END OF HEADER HAV --><!-- END OF HEADER HAV --> 
-<!-- END OF HEADER HAV --><!-- END OF HEADER HAV --><!-- END OF HEADER HAV --> 
-<!-- END OF HEADER HAV --><!-- END OF HEADER HAV --><!-- END OF HEADER HAV -->      
+   
+
+<!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="loginmodal-container">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <!--         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+<!-- Search Modal -->
+    <div class="container modal fade" id="searchModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Search Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="loginmodal-container">            
+              <form class="border-0" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>    
 
 <!-- About US section --><!-- About US section --><!-- About US section -->
 
-
-<section>
-
+<section class="aboutUsBG">
   <div class="container">
-    
     <h1 class="mt-5 mb-4">Its More Than Sportwear</h1>  
-
     <p>Sporta Sportswear is based on one principle: blending high fashion with low price in 
       order to bring environmental awareness to the forefront of people's lives. 
       A percentage of every order goes towards environmental preservation organizations all over the world.  

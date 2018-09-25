@@ -27,22 +27,24 @@
 
 <!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV --><!-- START OF HEADER HAV -->
     <header>
-      <nav class="navbar navbar-expand-sm"> <!--nav-class navbar-dark bg-dark -->
+      <nav class="navbar navbar-expand-sm"> 
         <div class="container "> <!-- nav-container -->
           <a href="index.html" class="navbar-brand">
             <img id="brand-logo" src="./assets/img/img_logo.png" alt="">
           </a>
           <button class="navbar-toggler" data-toggle="collapse" >
-            <a href="#"><ion-icon name="search"></a>
-            </button>      
+            <a href="#" data-toggle="modal" data-target="#searchModal">
+              <ion-icon name="search">
+            </a>
+          </button>      
 
-            <button class="navbar-toggler" data-toggle="collapse" >
-              <a href="checkout.html">
+          <button class="navbar-toggler" data-toggle="collapse" >
+            <a href="checkout.html">
                 <img  class="" id="cartIcon" src="./assets/img/cart.png">
-              </a>
-            </button>
+            </a>
+           </button>
 
-            <button class="navbar-toggler toggler-btn" data-toggle="collapse" 
+          <button class="navbar-toggler toggler-btn" data-toggle="collapse" 
             data-target="#navbarCollapse">
             <span><ion-icon name="menu"></ion-icon></span>
             <!-- <span class="navbar-toggler-icon"></span> -->
@@ -69,7 +71,8 @@
           <div class="d-none d-sm-block ml-auto"> 
             <ul class="navbar-nav ">
               <li class="nav-item">
-               <a href="#" class="nav-link"><ion-icon name="search"></a>
+               <a href="#" class="nav-link" data-toggle="modal" data-target="#searchModal">
+                 <ion-icon name="search"></a> 
                </li>
                <li class="nav-item">
                  <a href="#" class="nav-link" data-toggle="modal" data-target="#LoginModal">
@@ -124,6 +127,34 @@
         </div>
       </div>
     </div>
+
+<!-- Search Modal -->
+    <div class="container modal fade" id="searchModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Search Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="loginmodal-container">            
+              <form class="border-0" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>    
 
 
 <!-- SHOWCASE SLIDER --><!-- SHOWCASE SLIDER --><!-- SHOWCASE SLIDER --><!-- SHOWCASE SLIDER -->
@@ -321,6 +352,7 @@
     </div>
 
 
+
 <!-- INFO SECTION --><!-- INFO SECTION --><!-- INFO SECTION -->
     <section class="container mb-5 mx-auto" id="infoSection">  
       <div class="d-flex justify-content-center">
@@ -357,7 +389,6 @@
           </div>
       </div>
     </section>
-
 
 <!-- START OF FOOTER --><!-- START OF FOOTER --><!-- START OF FOOTER --><!-- START OF FOOTER -->
     <footer class="container pt-4 border-top">
@@ -397,7 +428,6 @@
           <small class="d-block mb-3 text-muted">&copy; 2018</small>
         </div>
     </footer>
-
 
 
 

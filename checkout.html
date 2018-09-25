@@ -37,16 +37,18 @@
             <img id="brand-logo" src="./assets/img/img_logo.png" alt="">
           </a>
           <button class="navbar-toggler" data-toggle="collapse" >
-            <a href="#"><ion-icon name="search"></a>
-            </button>      
+            <a href="#" data-toggle="modal" data-target="#searchModal">
+              <ion-icon name="search">
+            </a>
+          </button>      
 
-            <button class="navbar-toggler" data-toggle="collapse" >
-              <a href="#" data-toggle="modal" data-target="#LoginModal">
+          <button class="navbar-toggler" data-toggle="collapse" >
+            <a href="checkout.html">
                 <img  class="" id="cartIcon" src="./assets/img/cart.png">
-              </a>
-            </button>
+            </a>
+           </button>
 
-            <button class="navbar-toggler toggler-btn" data-toggle="collapse" 
+          <button class="navbar-toggler toggler-btn" data-toggle="collapse" 
             data-target="#navbarCollapse">
             <span><ion-icon name="menu"></ion-icon></span>
             <!-- <span class="navbar-toggler-icon"></span> -->
@@ -55,16 +57,16 @@
           <div class="collapse navbar-collapse text-md-center" id="navbarCollapse">
             <ul class="navbar-nav"> <!-- mr-auto make the div left aligned -->
               <li class="nav-item">
-                <a id="js--scroll-to-newArrivals" href="index.html" class="nav-link">NEW ARRIVALS</a>
+                <a id="js--scroll-to-newArrivals" href="#newArrivalSection" class="nav-link js--scroll-to-newArrivals">NEW ARRIVALS</a>
               </li>            
               <li class="nav-item active">
-                <a href="index.html#menSection" class="nav-link">MEN</a>
+                <a href="#menSection" class="nav-link">MEN</a>
               </li>
               <li class="nav-item">
-                <a href="index.html#womenSection" class="nav-link">WOMEN</a>
+                <a href="#womenSection" class="nav-link">WOMEN</a>
               </li>
               <li class="nav-item">
-                <a href="index.html#sportswearSection" class="nav-link">SPORTS</a>
+                <a href="#sportswearSection" class="nav-link">SPORTS</a>
               </li>
             </ul>
           </div>
@@ -73,7 +75,8 @@
           <div class="d-none d-sm-block ml-auto"> 
             <ul class="navbar-nav ">
               <li class="nav-item">
-               <a href="#" class="nav-link"><ion-icon name="search"></a>
+               <a href="#" class="nav-link" data-toggle="modal" data-target="#searchModal">
+                 <ion-icon name="search"></a> 
                </li>
                <li class="nav-item">
                  <a href="#" class="nav-link" data-toggle="modal" data-target="#LoginModal">
@@ -97,7 +100,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">LOGIN FORM</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -116,7 +119,7 @@
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                 </div>
-                <button type="submit" class="btn">SUBMIT</button>
+                <button type="submit" class="btn">Submit</button>
               </form>
             </div>
 
@@ -128,6 +131,35 @@
         </div>
       </div>
     </div>
+
+
+<!-- Search Modal -->
+    <div class="container modal fade" id="searchModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Search Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="loginmodal-container">            
+              <form class="border-0" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>    
 
 
 <!-- START OF CHECKOUT SECTION --><!-- START OF CHECKOUT SECTION --><!-- START OF CHECKOUT SECTION -->

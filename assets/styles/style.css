@@ -102,6 +102,11 @@ header {
 
 }
 
+
+
+/* SEARCH MODAL FORM
+-------------------------------------------------- */
+
 /*-------------------------------------------------- */
 /* MAIN SHOWCASE SECTION --------------------------- */
 /*-------------------------------------------------- */
@@ -290,13 +295,19 @@ header {
 
 
 
-
 /* About Us Section
 -------------------------------------------------- */
 
 .aboutUs {
   width: 97%;
 }
+
+.aboutUsBG {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                              rgba(255, 255, 255, 0.5)  url('../img/aboutUsBG.jpg');
+  background-size: cover;
+}
+
 
 /* Contact Us Section
 -------------------------------------------------- */
@@ -389,6 +400,8 @@ footer .contactLink {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+
 }
 
 /* Medium devices (tablets, 768px and up) */
