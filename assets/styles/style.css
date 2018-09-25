@@ -299,7 +299,8 @@ header {
   font-size: 80%;
   font-family: 'Open Sans', sans-serif;
  }
-
+    
+ 
  .no-bg {
    background-color:#f2f2f2;
  } 
@@ -443,6 +444,7 @@ footer .row h6 a {
   }
 
 
+
   #menSection .btn {
     font-size: 50%;letter-spacing: 2px;
     position: absolute;
@@ -467,6 +469,10 @@ footer .row h6 a {
     position: absolute;
     left:20%;
     top: 78%;   
+  }
+
+  #infoSection h3 {
+    padding-top: 15%;
   }
 
 }
