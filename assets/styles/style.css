@@ -102,6 +102,18 @@ header {
 
 }
 
+.modal-header {
+  background-color: black;
+  color: white;
+}
+
+.modal #exampleModalLabel {
+  color: white;
+} 
+
+.modal-header button span {
+  color: white; 
+}
 
 
 /* SEARCH MODAL FORM
