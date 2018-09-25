@@ -8,7 +8,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 105%;
   background-color: #f2f2f2; /* #ecf0f1; Not So White */
-  color: #2c3e50;
+  color: black;
 }
 
 h1,h4,h6 {
@@ -36,21 +36,12 @@ h1,h4,h6 {
 }
 
 
-
 ion-icon {
   font-size: 25px;
 }
 
 
-
-
-
-
-
-
-
-/*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*/
-/*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*/
+/*--- HEADER ---*//*--- HEADER ---*//*--- HEADER ---*/
 
 header {
  background-color: white;
@@ -67,17 +58,14 @@ header {
   width: 120px;
 } 
 
-#loginIcon {
-  width: 28px;
-}
 
-#cartIcon {
+#cartIcon,
+#loginIcon {
   width: 28px;
 }
 
 .navbar {
   font-family: 'Poppins', sans-serif;
-
 }
 
 .navbar ion-icon,
@@ -94,7 +82,6 @@ header {
 }
 
 
-
 .nav-item a:hover{
 /*   background-color:#FCC; */
     color: #2c3e50; /* Midnight blue*/
@@ -102,6 +89,19 @@ header {
 }
 
 
+/* LOGIN FORM
+-------------------------------------------------- */
+#LoginModal h5 {
+  color: black;
+}
+
+#LoginModal .form-check-label {
+  font-size: 85%;
+}
+
+.loginmodal-container {
+  color: black;
+}
 
 /*-------------------------------------------------- */
 /* MAIN SHOWCASE SECTION --------------------------- */
@@ -135,7 +135,7 @@ header {
 
 
 
- .carousel-image-1 {
+.carousel-image-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
                               rgba(0, 0, 0, 0.3)  url('../img/showcase1lg.jpg');
   background-size: cover;
@@ -351,7 +351,6 @@ footer .contactLink {
     padding-right:3%;
   }
 
-
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -378,26 +377,16 @@ footer .contactLink {
     top: 78%;   
   }
 
-  
-
-
 }
-
-
 
 
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
-  
-
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-
 }
 
 

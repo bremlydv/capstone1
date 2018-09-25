@@ -14,8 +14,8 @@ $(document).ready(function() {
     
     
     /* Scroll on buttons */
-    $('.js--scroll-to-newArrivals').click(function () {
-       $('html, body').animate({scrollTop: $('.js--section-newArrivals').offset().top}, 1000); 
+    $('#js--scroll-to-newArrivals').click(function () {
+       $('html, body').animate({scrollTop: $('#newArrivalSection').offset().top}, 1000); 
     });
     
     $('.js--scroll-to-start').click(function () {
