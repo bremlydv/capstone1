@@ -349,6 +349,10 @@ header {
 
 }
 
+#checkoutSection .fab {
+    color: black;
+}
+
 #youAlsoLikeSection .btn {
   font-size: 85%;letter-spacing: 2px;
     position: absolute;
@@ -377,8 +381,9 @@ footer li {
   letter-spacing: .5px;
 }
 
-footer .contactLink {
-  color: black;
+
+footer .row h6 a {
+  color: inherit;
 }
 
 /* RESPONSIVE CSS
