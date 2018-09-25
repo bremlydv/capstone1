@@ -376,6 +376,14 @@ header {
   width: 97%;
 }
 
+/* ABOUT US CSS
+-------------------------------------------------- */
+
+.aboutUsSection h1 {
+  font-family: 'Lato', sans-serif;  
+
+}
+
 /* FOOTER CSS
 -------------------------------------------------- */
 footer {
@@ -424,6 +432,17 @@ footer .row h6 a {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+  .info-icon {
+    padding-top: 3%;
+    padding-left:3%;
+    padding-right:3%;
+  }
+
+  #infoSection .card-title {
+    padding-top: 3%;
+  }
+
+
   #menSection .btn {
     font-size: 50%;letter-spacing: 2px;
     position: absolute;
@@ -460,6 +479,13 @@ footer .row h6 a {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  .info-icon {
+    padding-top: 5%;
+    padding-left:3%;
+    padding-right:6%;
+  }
+
 }
 
 
