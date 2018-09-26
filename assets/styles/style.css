@@ -251,7 +251,7 @@ header {
 
  
 .womenSectionBG {
-   background: url(../img/womenBG.jpg);
+   background: url('https://github.com/bremlydv/capstone1/blob/master/assets/img/womenBg.jpg?raw=true');
    background-size: cover;
    background-attachment: fixed; 
 }
@@ -272,7 +272,7 @@ header {
  }
 
 .sportswearBG {
- background: url(../img/sportsBG.jpg);
+ background: url('https://github.com/bremlydv/capstone1/blob/master/assets/img/sportsBg.jpg?raw=true');
  background-size: cover;
  background-attachment: fixed;
 }
