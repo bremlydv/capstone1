@@ -377,6 +377,15 @@ header {
   width: 97%;
 }
 
+/* Gallery */
+
+.gallery1stRow {
+    margin-bottom: 10px;
+}
+ 
+
+
+
 /* ABOUT US CSS
 -------------------------------------------------- */
 
@@ -407,11 +416,17 @@ footer .row h6 a {
   color: inherit;
 }
 
+
+
+#gallery  > .container > .first-row {
+  margin-bottom: 3%;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (min-width: 350px) and (max-width: 575.98px) {}
   .carousel-item h1 {
     font-size: 250%;
   }
@@ -420,6 +435,10 @@ footer .row h6 a {
     padding-top: 3%;
     padding-left:3%;
     padding-right:3%;
+  }
+
+  #gallery  > .container > .first-row {
+    margin-bottom: 0;
   }
 
 }
@@ -475,6 +494,11 @@ footer .row h6 a {
     padding-top: 15%;
   }
 
+  #gallery  > .container > .first-row {
+    margin-bottom: 4%;
+  }
+
+
 }
 
 
@@ -490,6 +514,10 @@ footer .row h6 a {
     padding-top: 5%;
     padding-left:3%;
     padding-right:6%;
+  }
+
+  #gallery  > .container > .first-row {
+    margin-bottom: 3%;
   }
 
 }
