@@ -252,7 +252,7 @@ header {
  
 .womenSectionBG {
    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
-                              rgba(255, 255, 255, 0.3)  url(../img/womenBg.jpg);
+                               rgba(255, 255, 255, 0.3)  url(../img/womenBg.jpg);
    background-size: cover;
    background-attachment: fixed; 
 }
@@ -274,7 +274,7 @@ header {
 
 .sportswearBG {
  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                              rgba(0, 0, 0, 0.7) url(../img/sportsBG.jpg);
+                             rgba(0, 0, 0, 0.7)  url('https://github.com/bremlydv/capstone1/blob/master/assets/img/sportsBg.jpg?raw=true');
  background-size: cover;
  background-attachment: fixed;
 }
